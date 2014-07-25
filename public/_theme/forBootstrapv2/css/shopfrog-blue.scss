@@ -1,0 +1,236 @@
+$dark: #0427a5;
+$extradark: #13008f;
+$medium: #4063e5;
+$light: #dde4ff;
+
+$linktext: #0427a5;
+$linktexthover: #4063e5; 
+
+$butback: #4063e5;
+$butbackhover: #0427a5;
+$buttext: #fff;
+
+$navhover: #c7d3ff;
+$submenu: #b2c2ff; 
+
+$bodytext: #25394d;
+
+$alt1: #ccb2ff;
+
+$atcbut: #f5447a;
+$atcbuthover: #f50951;
+$atctext: #fff;
+$atctextshadow: #b80038;
+
+a {
+	color: $linktext;
+	@include transition(color 0.5s);	
+}
+
+a:hover {
+	color: $linktexthover;
+	@include transition(color 0.5s);	
+}
+
+
+
+body {
+	background: url(img/background-blue.png) repeat $light;	
+	color: $bodytext;
+}
+
+header {
+	background-color: $medium;
+	border-bottom: solid 1px $dark;
+}
+
+.navbar {
+	.brand {
+		background-color: $dark;	
+	}
+}
+
+.navbar {
+	.nav {
+		> {
+			li {
+				> a {
+					color: #fff;
+
+					&:hover,
+					&:focus {
+						background-color: $navhover;
+						color: #fff;
+					}
+				}
+				
+				&.activehover {
+					> a {
+						background-color: $navhover;
+						color: #fff;
+					}
+				}
+			}
+		
+			.active {
+				a {
+					color: $extradark;
+					
+					&:hover,
+					&:focus {
+						color: $extradark;
+					}
+				}
+			}
+		}
+	}
+}
+
+.submenu-container {
+	background-color: $navhover;
+	border-bottom: solid 4px $medium;
+	
+	.submenu {
+		background-color: $submenu;
+		
+		a {
+			.price {
+				color: $bodytext;
+			}
+		}
+		
+		li {
+			&.active,
+			&:hover {
+				background-color: $navhover;
+			}
+		}
+	}
+	
+	.submenu-preview {
+		a {
+			&.drop-link {
+				background: $dark;
+				color: white;
+			}
+		}
+	}
+}
+
+.basket {
+	background-color: $dark;
+	
+	.basket-count {
+		color: $extradark;
+	}
+}
+
+.product {
+	.description {
+		a {
+			color: $linktext;
+		}
+	}
+	
+	.details-expand {
+		color: #fff;
+		background-color: $medium;
+		
+		&:hover {
+			background-color: $dark;
+		}
+		
+		&.expanded {
+			background-color: $dark;
+		}
+	}
+	
+	&.cta {
+		color: $dark;
+		@include transition(background-color 0.5s);	
+	
+		&.alt {
+			background-color: $medium;
+			color: #fff;
+			
+			a, a:hover {
+				color: #fff;
+				display: block;
+			}
+			
+			&:hover {
+				background-color: $butbackhover;
+				@include transition(background-color 0.5s);	
+			}
+		}
+	}
+	
+	.plabel {
+		background-color: $alt1;
+		text-shadow: 1px 1px 1px #A7A1A1;				
+	}
+}
+
+.btn {
+	background-color: $medium;
+	
+	&:hover, &:focus {
+		background-color: $dark;
+	}
+}
+
+.pricing {
+	.special {
+		background-color: $alt1;
+		color: #fff;
+	}
+}
+
+.top-contrib {
+	background-color: $dark;
+	color: #fff;
+}
+
+.quantity {
+	color: #fff;
+	background-color: $medium;
+	
+	&:hover {
+		background-color: $dark;
+		color: #fff;
+	}
+}
+
+.navbar {
+	.btn-navbar {
+		&:hover {
+			color: #fff;
+			background-color: $navhover;
+		}
+	}
+}
+
+.collection-page {
+	.board-filters,
+	.board-links {
+		a.filter-hidden {	
+			background-color: $medium;
+			color: #fff;
+			border-color: $dark;
+		}
+	}
+}
+
+.btn-atc {
+	background-color: $atcbut;
+	color: $atctext;
+	text-shadow: 1px 1px 1px $atctextshadow;
+  	box-shadow: 1px 1px 1px $atctextshadow;	
+	
+	&:hover {
+		background-color: $atcbuthover;
+	}
+	&.qadd {
+		box-shadow: none;		
+	}
+}

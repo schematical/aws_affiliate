@@ -1,0 +1,237 @@
+$dark: #b8335c;
+$extradark: #5c001c;
+$medium: #F5447A;
+$clight: #ffe0e9;
+
+$linktext: #b8335c;
+$linktexthover: #F5447A; 
+
+$butback: #F5447A;
+$butbackhover: #b8335c;
+$buttext: #fff;
+
+$navhover: #f5d1dc;
+$submenu: #f5a8c0; 
+
+$bodytext: #25394d;
+
+$alt1: #ffcdb9;
+
+$atcbut: #ffc247;
+$atcbuthover: #ffaa00;
+$atctext: #fff;
+$atctextshadow: #c28100;
+
+
+a {
+	color: $linktext;
+	@include transition(color 0.5s);	
+}
+
+a:hover {
+	color: $linktexthover;
+	@include transition(color 0.5s);	
+}
+
+
+
+body {
+	background: url(img/background-pink.png) repeat $clight;	
+	color: $bodytext;
+}
+
+header {
+	background-color: $medium;
+	border-bottom: solid 1px $dark;
+}
+
+.navbar {
+	.brand {
+		background-color: $dark;	
+	}
+}
+
+.navbar {
+	.nav {
+		> {
+			li {
+				> a {
+					color: #fff;
+
+					&:hover,
+					&:focus {
+						background-color: $navhover;
+						color: #fff;
+					}
+				}
+				
+				&.activehover {
+					> a {
+						background-color: $navhover;
+						color: #fff;
+					}
+				}
+			}
+		
+			.active {
+				a {
+					color: $extradark;
+					
+					&:hover,
+					&:focus {
+						color: $extradark;
+					}
+				}
+			}
+		}
+	}
+}
+
+.submenu-container {
+	background-color: $navhover;
+	border-bottom: solid 4px $medium;
+	
+	.submenu {
+		background-color: $submenu;
+		
+		a {
+			.price {
+				color: $bodytext;
+			}
+		}
+		
+		li {
+			&.active,
+			&:hover {
+				background-color: $navhover;
+			}
+		}
+	}
+	
+	.submenu-preview {
+		a {
+			&.drop-link {
+				background: $dark;
+				color: white;
+			}
+		}
+	}
+}
+
+.basket {
+	background-color: $dark;
+	
+	.basket-count {
+		color: $extradark;
+	}
+}
+
+.product {
+	.description {
+		a {
+			color: $linktext;
+		}
+	}
+	
+	.details-expand {
+		color: #fff;
+		background-color: $medium;
+		
+		&:hover {
+			background-color: $dark;
+		}
+		
+		&.expanded {
+			background-color: $dark;
+		}
+	}
+	
+	&.cta {
+		color: $dark;
+		@include transition(background-color 0.5s);	
+	
+		&.alt {
+			background-color: $medium;
+			color: #fff;
+			
+			a, a:hover {
+				color: #fff;
+				display: block;
+			}
+			
+			&:hover {
+				background-color: $butbackhover;
+				@include transition(background-color 0.5s);	
+			}
+		}
+	}
+	
+	.plabel {
+		background-color: $alt1;
+		text-shadow: 1px 1px 1px #A7A1A1;		
+	}
+}
+
+.btn {
+	background-color: $medium;
+	
+	&:hover, &:focus {
+		background-color: $dark;
+	}
+}
+
+.pricing {
+	.special {
+		background-color: $alt1;
+		color: #fff;
+	}
+}
+
+.top-contrib {
+	background-color: $dark;
+	color: #fff;
+}
+
+.quantity {
+	color: #fff;
+	background-color: $medium;
+	
+	&:hover {
+		background-color: $dark;
+		color: #fff;
+	}
+}
+
+.navbar {
+	.btn-navbar {
+		&:hover {
+			color: #fff;
+			background-color: $navhover;
+		}
+	}
+}
+
+.collection-page {
+	.board-filters,
+	.board-links {
+		a.filter-hidden {	
+			background-color: $medium;
+			color: #fff;
+			border-color: $dark;
+		}
+	}
+}
+
+.btn-atc {
+	background-color: $atcbut;
+	color: $atctext;
+	text-shadow: 1px 1px 1px $atctextshadow;
+  	box-shadow: 1px 1px 1px $atctextshadow;	
+	
+	&:hover {
+		background-color: $atcbuthover;
+	}
+	&.qadd {
+		box-shadow: none;		
+	}
+}
