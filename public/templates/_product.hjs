@@ -1,0 +1,31 @@
+
+<div class="product {{ _size }}">
+    <div class="media">
+        <a href="{{ DetailPageURL }}" title="product title">
+            <img src="{{ LargeImage.URL }}" alt="product title" data-img="product-1" class="img-responsive" />
+        </a>
+        <!--<span class="plabel">just in</span>-->
+    </div>
+    <div class="details">
+        <p class="name"><a href="{{ DetailPageURL }}">{{ ItemAttributes.Title }}</a></p>
+        <!--<p class="price"><span class="cur">$</span><span class="total">25.00</span></p>-->
+        <!--<a href="{{ DetailPageURL }}" class="details-expand" data-target="details-0001">+</a>-->
+    </div>
+    <div class="details-extra" id="details-0001">
+        <form class="form-inline" action="#">
+            <div>
+                <label>Quantity</label>
+                <input type="text" class="input-sm form-control quantity" value="1">
+            </div>
+            <div>
+                <label>Size</label>
+                <select class="input-sm form-control size">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+            </div>
+        </form>
+        <button class="btn btn-bottom btn-atc qadd">Add to cart</button>
+    </div>
+</div>

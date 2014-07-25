@@ -4,70 +4,7 @@
         "angular":"angular"
     },
     "models":{
-        "symbol":{
-            "uri_prefix":"/symbols",
-            "parent":"library",
-            "fields":{
-                "namespace":"namespace",
-                "name":"string",
-                "desc":"md",
-                "tags":"Object",
-                "data":"Object",
-                "pixels":"Object",
-                "library":{
-                    "type":"ref",
-                    "ref":"library",
-                    "bootstrap_populate":"req.library"
-                }
 
-            }
-        },
-        "library":{
-            "uri_prefix":"/librarys",
-            "fields":{
-                "namespace":"namespace",
-                "name":"string",
-                "desc":"md",
-                "owner":{
-                    "type":"ref",
-                    "ref":"account",
-                    "bootstrap_populate":"req.user"
-                }
-
-            }
-        },
-        "cluster":{
-            "parent":"image",
-            "is_subdocument":true,
-            "uri_prefix":"/clusters",
-            "fields":{
-                "bounds":"object",
-                "x":"number",
-                "y":"number",
-                "height":"number",
-                "width":"number",
-                "rotation":"number",
-                "results":"string",
-                "data_url":"string",
-                "pixels":"object"
-            }
-        },
-        "image":{
-            "uri_prefix":"/images",
-            "fields":{
-                "namespace":"namespace",
-                "name":"string",
-                "image":"s3-asset",
-                "desc":"md",
-                "clusters":["app.model.Cluster.schema"],
-                "owner":{
-                    "type":"ref",
-                    "ref":"account",
-                    "bootstrap_populate":"req.user"
-                }
-
-            }
-        }
     },
     "bowser":{
         "dependencies":{
@@ -80,7 +17,8 @@
             "mkdirp":"*",
             "canvas":"*",
             "hogan.js":"*",
-            "aws-sdk":"*"
+            "aws-sdk":"*",
+            "aws-lib":"*"
         }
     }
 }

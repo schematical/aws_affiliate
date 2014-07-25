@@ -1,0 +1,43 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+<meta charset="utf-8">
+<title>Shopfrog - Modern Ecommerce</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="/_theme/css/bootstrap.css" rel="stylesheet">
+<link href="/_theme/css/shopfrog.css" rel="stylesheet" media="screen">
+
+
+<link href="/_theme/css/shopfrog-bw.css" rel="stylesheet" media="screen">
+
+<!--
+<link href="/_theme/css/shopfrog-brown.css" rel="stylesheet" media="screen">
+<link href="/_theme/css/shopfrog-green.css" rel="stylesheet" media="screen">
+<link href="/_theme/css/shopfrog-orange.css" rel="stylesheet" media="screen">
+<link href="/_theme/css/shopfrog-grey.css" rel="stylesheet" media="screen">
+<link href="/_theme/css/shopfrog-pink.css" rel="stylesheet" media="screen">
+<link href="/_theme/css/shopfrog-blue.css" rel="stylesheet" media="screen">
+-->
+
+<link href="/_theme/css/rateit.css" rel="stylesheet" media="screen">
+<link href="/_theme/css/magnific-popup.css" rel="stylesheet">
+<script src="/_theme/js/respond.min.js"></script>
+<link href="/_theme/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="/_theme/js/modernizr.min.js"></script>
+<script src="/_theme/js/imagesloaded.min.js"></script>
+<script src="/_theme/js/jquery.masonry.min.js"></script>
+<script src="/_theme/js/jquery.rateit.min.js"></script>
+<script src="/_theme/js/jquery.magnific-popup.min.js"></script>
+<script src="/_theme/js/bootstrap.js"></script>
+<script src="/_theme/js/shopfrog.js"></script>
+
+
+
+
